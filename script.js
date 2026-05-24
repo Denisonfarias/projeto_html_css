@@ -13,8 +13,8 @@ const venues = [
   // BARES
   { id:14, name:"Bar da Gelada", category:"Bares", description:"Bar animado com refeição no local, viagem e clima descontraído.", neighborhood:"Parque Dois Irmãos", rating:4.4, priceLevel:2, image:"assets/bdg.png", hours:"17h - 02h" },
   { id:15, name:"Arena Bar & Petiscaria", category:"Bares", description:"Bar e grill com petiscos variados e ambiente acolhedor.", neighborhood:"Demócrito Rocha", rating:4.5, priceLevel:2, image:"assets/arena_bar.png", hours:"17h - 00h" },
-  { id:16, name:"Samba do Vila", category:"Bares", description:"Amplo espaço com rodas de samba, porções, caipirinhas e clima animado.", neighborhood:"Varjota", rating:4.2, priceLevel:2, image:"assets/venue-musica.jpg", hours:"17h - 02h" },
-  { id:17, name:"Boteco do Imprensa", category:"Bares", description:"Boteco tradicional com petiscos, cerveja gelada e clima descontraído.", neighborhood:"Aldeota", rating:4.1, priceLevel:2, image:"assets/venue-bar.jpg", hours:"17h - 00h" },
+  { id:16, name:"Samba do Vila", category:"Bares", description:"Amplo espaço com rodas de samba, porções, caipirinhas e clima animado.", neighborhood:"Varjota", rating:4.2, priceLevel:2, image:"assets/samba_do_vila.png", hours:"17h - 02h" },
+  { id:17, name:"Boteco do Imprensa", category:"Bares", description:"Boteco tradicional com petiscos, cerveja gelada e clima descontraído.", neighborhood:"Aldeota", rating:4.1, priceLevel:2, image:"assets/boteco_imprensa.png", hours:"17h - 00h" },
 
   //
   { id:3, name:"Comedy Club Fortaleza", category:"Comédia", description:"Os melhores comediantes do Nordeste toda sexta e sábado.", neighborhood:"Aldeota", rating:4.9, priceLevel:2, image:"assets/venue-comedy.jpg", hours:"20h - 00h" },
