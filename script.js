@@ -53,10 +53,79 @@ function escapeHtml(s) {
 
 function renderGrid() {
   const q = searchQuery.toLowerCase();
+
   const filtered = venues.filter(v => {
     const cat = activeCategory === "Todos" || v.category === activeCategory;
     const s = !q || v.name.toLowerCase().includes(q) || v.description.toLowerCase().includes(q) || v.neighborhood.toLowerCase().includes(q);
     return cat && s;
+  });
+
+  if (filtered.length === 0) {
+    gridEl.innerHTML = "";
+    emptyEl.hidden = false;
+    return;
+  }
+
+  emptyEl.hidden = true;
+
+  gridEl.innerHTML = filtered.map((v, i) => {
+    const imagens = v.images || [v.image];
+
+    return `
+      <article class="card" style="animation-delay:${i * 50}ms">
+        <div class="card-img-wrap">
+          <img 
+            src="${imagens[0]}" 
+            alt="${escapeHtml(v.name)}" 
+            loading="lazy"
+            data-index="0"
+            data-images="${imagens.join('|')}"
+          />
+
+          ${imagens.length > 1 ? `
+            <button class="carousel-btn prev" type="button" data-dir="-1">&lt;</button>
+            <button class="carousel-btn next" type="button" data-dir="1">&gt;</button>
+          ` : ""}
+
+          <span class="badge">${v.category}</span>
+          <span class="rating"><span class="star">★</span>${v.rating}</span>
+        </div>
+
+        <div class="card-body">
+          <div class="card-head">
+            <h3 class="card-title">${escapeHtml(v.name)}</h3>
+            <span class="card-price">${'R$'.repeat(v.priceLevel)}</span>
+          </div>
+
+          <p class="card-desc">${escapeHtml(v.description)}</p>
+
+          <div class="card-meta">
+            <span>📍 ${escapeHtml(v.neighborhood)}</span>
+            <span>🕒 ${escapeHtml(v.hours)}</span>
+          </div>
+        </div>
+      </article>
+    `;
+  }).join("");
+
+  document.querySelectorAll(".carousel-btn").forEach(btn => {
+    btn.addEventListener("click", (event) => {
+      event.stopPropagation();
+
+      const cardImgWrap = event.currentTarget.closest(".card-img-wrap");
+      const img = cardImgWrap.querySelector("img");
+
+      const imagens = img.dataset.images.split("|");
+      let indexAtual = Number(img.dataset.index);
+      const direcao = Number(event.currentTarget.dataset.dir);
+
+      indexAtual = (indexAtual + direcao + imagens.length) % imagens.length;
+
+      img.src = imagens[indexAtual];
+      img.dataset.index = indexAtual;
+    });
+  });
+}
   });
 
   if (filtered.length === 0) {
