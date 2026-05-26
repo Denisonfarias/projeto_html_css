@@ -114,3 +114,38 @@ img { display: block; max-width: 100%; }
 
 /* Footer */
 footer { border-top: 1px solid var(--border); background: var(--card); padding: 2rem; text-align: center; color: var(--muted-foreground); font-size: .875rem; }
+
+.carousel-btn {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 5;
+
+  width: 32px;
+  height: 32px;
+  border: none;
+  border-radius: 999px;
+
+  background: rgba(255, 255, 255, .85);
+  color: #1a1a1a;
+
+  font-size: 1.25rem;
+  font-weight: 700;
+  cursor: pointer;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.carousel-btn:hover {
+  background: #fff;
+}
+
+.carousel-btn.prev {
+  left: .75rem;
+}
+
+.carousel-btn.next {
+  right: .75rem;
+}
