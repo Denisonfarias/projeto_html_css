@@ -18,7 +18,7 @@ const venues = [
 
   //
   { id:3, name:"Comedy Club Fortaleza", category:"Comédia", description:"Os melhores comediantes do Nordeste toda sexta e sábado.", neighborhood:"Aldeota", rating:4.9, priceLevel:2, image:"assets/venue-comedy.jpg", hours:"20h - 00h" },
-  { id:4, name:"Depot Medieval", category:"Pubs", description:"Cenografia detalhada que remete a um castelo ou taberna, ideal para fotos e entusiastas de mitologia nórdica.", neighborhood:"Cidade dos Funcionários", rating:4.5, priceLevel:3, image:"assets/Depot_medieval04.png", hours:"18h - 23h" },
+  {id:4,name:"Depot Medieval", category:"Pubs",description:"Cenografia detalhada que remete a um castelo ou taberna, ideal para fotos e entusiastas de mitologia nórdica.", neighborhood:"Cidade dos Funcionários", rating:4.5, priceLevel:3, image:"assets/Depot_medieval01.png", images:[ "assets/Depot_medieval01.png", "assets/Depot_medieval02.png", "assets/Depot_medieval03.png", "assets/Depot_medieval04.png"], hours:"18h - 23h"},
   { id:5, name:"Palco da Praia", category:"Música ao Vivo", description:"Forró, MPB e sertanejo ao vivo com os pés na areia.", neighborhood:"Praia de Iracema", rating:4.6, priceLevel:2, image:"assets/venue-musica.jpg", hours:"19h - 04h" },
   { id:6, name:"Sky Lounge", category:"Rooftops", description:"Vista panorâmica de Fortaleza com cocktails premium.", neighborhood:"Mucuripe", rating:4.8, priceLevel:4, image:"assets/venue-rooftop.jpg", hours:"18h - 01h" },
   { id:9, name:"Stand Up CE", category:"Comédia", description:"Open mic toda quarta e shows especiais nos fins de semana.", neighborhood:"Centro", rating:4.3, priceLevel:1, image:"assets/venue-comedy.jpg", hours:"19h - 23h" },
