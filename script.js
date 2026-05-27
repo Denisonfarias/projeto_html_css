@@ -22,7 +22,8 @@ const venues = [
   { id:5, name:"Palco da Praia", category:"Música ao Vivo", description:"Forró, MPB e sertanejo ao vivo com os pés na areia.", neighborhood:"Praia de Iracema", rating:4.6, priceLevel:2, image:"assets/venue-musica.jpg", hours:"19h - 04h" },
   { id:6, name:"Sky Lounge", category:"Rooftops", description:"Vista panorâmica de Fortaleza com cocktails premium.", neighborhood:"Mucuripe", rating:4.8, priceLevel:4, image:"assets/venue-rooftop.jpg", hours:"18h - 01h" },
   { id:9, name:"Stand Up CE", category:"Comédia", description:"Open mic toda quarta e shows especiais nos fins de semana.", neighborhood:"Centro", rating:4.3, priceLevel:1, image:"assets/venue-comedy.jpg", hours:"19h - 23h" },
-  { id:7, name:"Bulls Beer House Parquelândia", category: "Pubs", description: "Pub descontraído com cervejas, drinks, petiscos e ambiente ideal para sair com amigos.", neighborhood:"Parquelândia", rating:4.6, priceLevel:2, image:"assets/bulls_beer_pub.png", hours:"17h - 00h"},  
+  { id:7, name:"Bulls Beer House Parquelândia", category: "Pubs", description: "Pub descontraído com cervejas, drinks, petiscos e ambiente ideal para sair com amigos.", neighborhood:"Parquelândia", rating:4.6, priceLevel:2, image:"assets/bulls_beer_pub.png", hours:"17h - 00h"},
+  { id:8, name:"House Garden", category: "Pubs", description: "Pub descontraído que possui um clima agradável, ideal para sair com amigos.", neighborhood:"Varjota", rating:4.0, priceLevel:2, image:"assets/House_Garden_Pub.png", hours:"18h - 00h"},
 ];
 
 let activeCategory = "Todos";
