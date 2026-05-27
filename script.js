@@ -17,7 +17,7 @@ const venues = [
   { id:17, name:"Boteco do Imprensa", category:"Bares", description:"Boteco tradicional com petiscos, cerveja gelada e clima descontraído.", neighborhood:"Aldeota", rating:4.1, priceLevel:2, image:"assets/boteco_imprensa.png", hours:"17h - 00h" },
 
   // PUBS e Comedia
-  { id:3, name:"Comedy Club Fortaleza", category:"Comédia", description:"Os melhores comediantes do Nordeste toda sexta e sábado.", neighborhood:"Aldeota", rating:4.9, priceLevel:2, image:"assets/venue-comedy.jpg", hours:"20h - 00h" },
+  { id:3, name:"Teatro do Humor", category:"Comédia", description:"Os melhores comediantes do Nordeste todos os dias.", neighborhood:"Meireles", rating:4.9, priceLevel:2, image:"assets/Teatro_do_Humor.jpg", hours:"16h - 23h" },
   { id:4, name:"Depot Medieval", category:"Pubs", description:"Cenografia detalhada que remete a um castelo ou taberna, ideal para fotos e entusiastas de mitologia nórdica.", neighborhood:"Cidade dos Funcionários", rating:4.5, priceLevel:3, image:"assets/Depot_medieval04.png", hours:"18h - 23h" },
   { id:5, name:"Palco da Praia", category:"Música ao Vivo", description:"Forró, MPB e sertanejo ao vivo com os pés na areia.", neighborhood:"Praia de Iracema", rating:4.6, priceLevel:2, image:"assets/venue-musica.jpg", hours:"19h - 04h" },
   { id:6, name:"Sky Lounge", category:"Rooftops", description:"Vista panorâmica de Fortaleza com cocktails premium.", neighborhood:"Mucuripe", rating:4.8, priceLevel:4, image:"assets/venue-rooftop.jpg", hours:"18h - 01h" },
