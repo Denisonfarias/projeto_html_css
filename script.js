@@ -25,7 +25,7 @@ const venues = [
   { id:7, name:"Bulls Beer House Parquelândia", category: "Pubs", description: "Pub descontraído com cervejas, drinks, petiscos e ambiente ideal para sair com amigos.", neighborhood:"Parquelândia", rating:4.6, priceLevel:2, image:"assets/bulls_beer_pub.png", hours:"17h - 00h"},
   { id:8, name:"House Garden", category: "Pubs", description: "Pub descontraído que possui um clima agradável, ideal para sair com amigos.", neighborhood:"Varjota", rating:4.0, priceLevel:2, image:"assets/House_Garden_Pub.png", hours:"18h - 00h"},
   { id:1, name:"The Bar", category: "Pubs", description: "Música ao vivo e um ambiente divertido.", neighborhood:"Linel Machado", rating:4.0, priceLevel:2, image:"assets/The_Bar_Pub.png", hours:"18h - 00h"},
-  { id:1, name:"Arena do humor", category: "Comédia", description: "Local convidativo para toda família", neighborhood:"Meireles", rating:4.0, priceLevel:2, image:"assets/arena_do_humor.png", hours:"17h - 23h"},
+  { id:2, name:"Arena do humor", category: "Comédia", description: "Local convidativo para toda família", neighborhood:"Meireles", rating:4.0, priceLevel:2, image:"assets/arena_do_humor.png", hours:"17h - 23h"},
 ];
 
 let activeCategory = "Todos";
