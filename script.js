@@ -21,7 +21,7 @@ const venues = [
   { id:4, name:"Depot Medieval", category:"Pubs", description:"Cenografia detalhada que remete a um castelo ou taberna, ideal para fotos e entusiastas de mitologia nórdica.", neighborhood:"Cidade dos Funcionários", rating:4.5, priceLevel:3, image:"assets/Depot_medieval04.png", hours:"18h - 23h" },
   { id:5, name:"Piadaria", category:"Comédia", description:"Comédia para sua familia", neighborhood:"Meireles", rating:4.7, priceLevel:1, image:"assets/Piadaria.jpg", hours:"18h - 22h" },
   { id:6, name:"Sky Lounge", category:"Rooftops", description:"Vista panorâmica de Fortaleza com cocktails premium.", neighborhood:"Mucuripe", rating:4.8, priceLevel:4, image:"assets/venue-rooftop.jpg", hours:"18h - 01h" },
-  { id:9, name:"Stand Up CE", category:"Comédia", description:"Open mic toda quarta e shows especiais nos fins de semana.", neighborhood:"Centro", rating:4.3, priceLevel:1, image:"assets/venue-comedy.jpg", hours:"19h - 23h" },
+  { id:9, name:"Aí Dentu Comedy", category:"Comédia", description:"Open mic toda quarta e shows especiais nos fins de semana.", neighborhood:"Parangaba", rating:4.7, priceLevel:1, image:"assets/Teatro_do_Humor.png", hours:"19h - 23h" },
   { id:7, name:"Bulls Beer House Parquelândia", category: "Pubs", description: "Pub descontraído com cervejas, drinks, petiscos e ambiente ideal para sair com amigos.", neighborhood:"Parquelândia", rating:4.6, priceLevel:2, image:"assets/bulls_beer_pub.png", hours:"17h - 00h"},
   { id:8, name:"House Garden", category: "Pubs", description: "Pub descontraído que possui um clima agradável, ideal para sair com amigos.", neighborhood:"Varjota", rating:4.0, priceLevel:2, image:"assets/House_Garden_Pub.png", hours:"18h - 00h"},
 ];
