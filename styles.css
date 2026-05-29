@@ -20,13 +20,78 @@ body { font-family: var(--font-body); background: var(--background); color: var(
 h1, h2, h3 { font-family: var(--font-display); }
 img { display: block; max-width: 100%; }
 
-/* Navbar */
+
+/* Navbar */ /* Configuração de botões inicio, sobre, contato, login e cadastro */
 .navbar {
-  position: absolute; top: 0; left: 0; right: 0; z-index: 20;
-  display: flex; align-items: center; justify-content: space-between;
-  padding: 1rem 1.5rem; color: #fff;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 20;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem 1.5rem;
+  color: #fff;
 }
-.logo { display: flex; align-items: center; gap: .5rem; font-family: var(--font-display); font-weight: 700; font-size: 1.25rem; }
+
+.navbar-left {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: .5rem;
+  font-family: var(--font-display);
+  font-weight: 700;
+  font-size: 1.25rem;
+}
+
+.nav-links {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.nav-links a,
+.nav-actions a {
+  color: #fff;
+  text-decoration: none;
+  font-family: var(--font-display);
+  font-weight: 600;
+  font-size: .95rem;
+}
+
+.nav-links a:hover,
+.nav-login:hover {
+  color: var(--accent);
+}
+
+.nav-actions {
+  display: flex;
+  align-items: center;
+  gap: .75rem;
+}
+
+.nav-login {
+  padding: .55rem .9rem;
+}
+
+.nav-cadastro {
+  padding: .55rem 1rem;
+  border-radius: 999px;
+  background: var(--primary);
+  color: #fff;
+  box-shadow: 0 4px 12px rgba(255, 107, 51, .3);
+}
+
+.nav-cadastro:hover {
+  background: #ff5722;
+}
+/**/
 
 /* Hero */
 .hero { position: relative; min-height: 40vh; display: flex; align-items: center; justify-content: center; overflow: hidden; }
