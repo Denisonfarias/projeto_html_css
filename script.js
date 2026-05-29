@@ -5,10 +5,10 @@ const categoryEmojis = {
 
 const venues = [
   // BARRACAS DE PRAIA
-  { id:10, name:"Chico do Caranguejo Praia", category:"Barracas", description:"Frutos do mar em ambiente descontraído na Praia do Futuro.", neighborhood:"Praia do Futuro", rating:4.4, priceLevel:3, image:"assets/venue-barraca.jpg", hours:"09h - 18h" },
-  { id:11, name:"Órbita Blue Bar", category:"Barracas", description:"Restobar praiano de menu sofisticado com vista pra praia.", neighborhood:"Praia do Futuro", rating:4.5, priceLevel:3, image:"assets/venue-barraca.jpg", hours:"11h - 19h30" },
-  { id:12, name:"Barraca da Boa", category:"Barracas", description:"Bar casual com frutos do mar e cerveja gelada na Beira Mar.", neighborhood:"Meireles", rating:4.2, priceLevel:2, image:"assets/venue-barraca.jpg", hours:"17h - 23h" },
-  { id:13, name:"Mercado dos Peixes de Fortaleza", category:"Barracas", description:"Mercado tradicional de peixes e frutos do mar na Beira Mar.", neighborhood:"Meireles", rating:4.4, priceLevel:2, image:"assets/venue-barraca.jpg", hours:"06h - 22h" },
+  { id:10, name:"Chico do Caranguejo Praia", category:"Barracas", description:"Frutos do mar em ambiente descontraído na Praia do Futuro.", neighborhood:"Praia do Futuro", rating:4.4, priceLevel:3, image:"assets/chico_caranguejo_pf.png", hours:"09h - 18h" },
+  { id:11, name:"Órbita Blue Bar", category:"Barracas", description:"Restobar praiano de menu sofisticado com vista pra praia.", neighborhood:"Praia do Futuro", rating:4.5, priceLevel:3, image:"assets/orbita_blue.png", hours:"11h - 19h30" },
+  { id:12, name:"Barraca da Boa", category:"Barracas", description:"Bar casual com frutos do mar e cerveja gelada na Beira Mar.", neighborhood:"Meireles", rating:4.2, priceLevel:2, image:"assets/barraca_da_boa.png", hours:"17h - 23h" },
+  { id:13, name:"Mercado dos Peixes de Fortaleza", category:"Barracas", description:"Mercado tradicional de peixes e frutos do mar na Beira Mar.", neighborhood:"Meireles", rating:4.4, priceLevel:2, image:"assets/mercado_peixes.png", hours:"06h - 22h" },
   
   // BARES
   { id:14, name:"Bar da Gelada", category:"Bares", description:"Bar animado com refeição no local, viagem e clima descontraído.", neighborhood:"Parque Dois Irmãos", rating:4.4, priceLevel:2, image:"assets/bdg.png", hours:"17h - 02h" },
