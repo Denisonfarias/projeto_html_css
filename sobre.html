@@ -1,19 +1,14 @@
-<!doctype html>
-<html lang="pt-BR">
-
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Sobre — RolêFortaleza</title>
-  <link rel="stylesheet" href="styles.css">
-</head>
-
-<body>
+<body class="about-body">
 
   <nav class="navbar">
     <div class="navbar-left">
       <div class="logo">
-        <span>📍 RolêFortaleza</span>
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+          stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z" />
+          <circle cx="12" cy="10" r="3" />
+        </svg>
+        <span>RolêFortaleza</span>
       </div>
 
       <div class="nav-links">
@@ -29,17 +24,28 @@
     </div>
   </nav>
 
-  <main class="container about-page" style="padding-top: 8rem;">
+  <header class="about-hero">
+    <img src="assets/sua-imagem-praia.jpg" alt="Praia de Fortaleza" class="about-hero-bg" />
+    <div class="about-hero-overlay"></div>
+
+    <div class="about-hero-content">
+      <span class="about-tag">Sobre o projeto</span>
+      <h1>Conheça o RolêFortaleza</h1>
+      <p>
+        Um guia simples, visual e direto para ajudar moradores e visitantes
+        a encontrarem os melhores rolês de Fortaleza.
+      </p>
+    </div>
+  </header>
+
+  <main class="container about-page">
     <section class="about-section">
       <span class="section-label">Sobre o projeto</span>
-      <h1>Sobre o RolêFortaleza</h1>
-
+      <h2>Sobre o RolêFortaleza</h2>
       <p>
         O RolêFortaleza é um guia simples e visual para ajudar moradores e visitantes
-        a encontrarem bares, pubs, barracas de praia, música ao vivo, comédia e outros
-        rolês em Fortaleza.
+        a encontrarem bares, pubs, barracas de praia, música ao vivo, comédia e outros rolês em Fortaleza.
       </p>
-
       <p>
         A proposta do projeto é reunir lugares interessantes da cidade em uma interface
         fácil de usar, com filtros por categoria, busca por nome, bairro e descrição.
@@ -78,5 +84,3 @@
   </footer>
 
 </body>
-
-</html>
