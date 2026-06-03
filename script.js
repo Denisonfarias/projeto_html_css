@@ -1,3 +1,26 @@
+// Formulário de contato
+document.addEventListener('DOMContentLoaded', function() {
+  const contactForm = document.getElementById('contactForm');
+  const successMessage = document.getElementById('successMessage');
+
+  if (contactForm) {
+    contactForm.addEventListener('submit', function(e) {
+      e.preventDefault();
+      
+      // Mostrar a mensagem de sucesso
+      successMessage.classList.add('show');
+      
+      // Limpar o formulário
+      contactForm.reset();
+      
+      // Esconder a mensagem após 5 segundos
+      setTimeout(function() {
+        successMessage.classList.remove('show');
+      }, 5000);
+    });
+  }
+});
+
 const categories = [
   "Todos",
   "Bares",
