@@ -1,0 +1,110 @@
+<!doctype html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contato — RolêFortaleza</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body class="about-body">
+
+  <nav class="navbar">
+    <div class="navbar-left">
+      <div class="logo">
+        <span>📍 RolêFortaleza</span>
+      </div>
+
+      <div class="nav-links">
+        <a href="index.html">Início</a>
+        <a href="sobre.html">Sobre</a>
+        <a href="contato.html" class="active">Contato</a>
+      </div>
+    </div>
+
+    <div class="nav-actions">
+      <a href="#" class="nav-login">Login</a>
+      <a href="#" class="nav-cadastro">Cadastro</a>
+    </div>
+  </nav>
+
+  <header class="hero about-hero">
+    <img class="hero-bg" src="assets/praia_sobre.png" alt="Imagem da praia no menu Sobre">
+    <div class="hero-overlay about-overlay"></div>
+
+    <div class="hero-content about-hero-content">
+      <h1>Contato — <span class="accent">RolêFortaleza</span></h1>
+      <p>
+        Tem alguma dúvida ou sugestão? Entre em contato conosco!
+      </p>
+    </div>
+  </header>
+
+  <main class="container about-page">
+
+    <section class="about-section">
+      <span class="section-label">Fale conosco</span>
+      <h2>Seu próximo rolê também pode começar aqui</h2>
+
+      <p>
+        O RolêFortaleza cresce com a ajuda da comunidade. Compartilhe sugestões, indique novos lugares ou envie dúvidas sobre a plataforma.
+      </p>
+
+      <p>
+          Queremos reunir os melhores rolês da cidade em um só lugar, e sua participação faz toda a diferença nessa missão.
+      </p>
+    </section>
+
+    <section class="about-cards">
+      <article class="about-card">
+        <div class="about-icon">💡</div>
+        <h3>Sugestões</h3>
+        <p>Compartilhe ideias para melhorar a plataforma e encontrar novos lugares.</p>
+      </article>
+
+      <article class="about-card">
+        <div class="about-icon">🛠️</div>
+        <h3>Correções</h3>
+        <p>Encontrou alguma informação incorreta? Avise para mantermos tudo atualizado.</p>
+      </article>
+
+      <article class="about-card">
+        <div class="about-icon">🤝</div>
+        <h3>Parcerias</h3>
+        <p>Possui um estabelecimento e quer divulgar seu espaço? Fale conosco.</p>
+      </article>
+    </section>
+
+    <section class="about-cta">
+      <span class="section-label">Fale conosco</span>
+      <h2>Tem alguma dúvida ou sugestão?</h2>
+      <p>Entre em contato conosco preenchendo o formulário abaixo:</p>
+     <form id="contactForm" action="mailto" method="POST" enctype="text/plain">
+        <div class="success-message" id="successMessage">
+          ✓ Mensagem enviada com sucesso! Obrigado pelo contato.
+        </div>
+        
+        <label for="name">Nome:</label>
+        <input class="input" type="text" id="name" name="name" required>
+
+        <label for="email">Email:</label>
+        <input class="input" type="email" id="email" name="email" required>
+
+        <label for="message">Mensagem:</label>
+        <textarea class="input" id="message" name="message" rows="5" required></textarea>
+
+        <button class="botao-form" type="submit">Enviar</button>
+      </form>
+    </section>
+
+  </main>
+
+  <footer>
+    <p>© 2026 RolêFortaleza · Feito com ❤️ na Terra da Luz &lt;3</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
