@@ -27,24 +27,32 @@ Data criação: _2026-06-18_ <br>
 
 ---
 
-# 📁 Estrutura do projeto
+📍 RolêFortaleza • Documentação do Frontend
+Mapeamento de Estrutura, Estilos e Lógica do Projeto
+Squad: Desenvolvimento / Produto
+Responsável: Documentação do Sistema
+Data criação: 2026-06-18
 
-| Arquivo | O que faz |
-| :--- | :--- |
-| `index.html` | Página inicial (Início) |
-| `sobre.html` | Página "Sobre" |
-| `contato.html` | Página "Contato" |
-| `styles.css` | Visual de todas as páginas (cores, fontes, layout) |
-| `script.js` | Lógica dinâmica: filtros, cards, busca, formulário |
-| `assets/` | Imagens (hero, venues, ícones) |
+📁 Estrutura do projeto
+Arquivo
+O que faz
+ 
+index.html
+Página inicial (Início)
+sobre.html
+Página "Sobre"
+contato.html
+Página "Contato"
+styles.css
+Visual de todas as páginas (cores, fontes, layout)
+script.js
+Lógica dinâmica: filtros, cards, busca, formulário
+assets/
+Imagens (hero, venues, ícones)
 
----
 
-# 🧭 NAVBAR (topo de todas as páginas)
-
-* **Onde está no HTML:** `index.html:32-49`, `sobre.html:15-32`, `contato.html:15-32`
-
-```html
+🧭 NAVBAR (topo de todas as páginas)
+Onde está no HTML: index.html:32-49, sobre.html:15-32, contato.html:15-32
 <nav class="navbar">
   <div class="navbar-left">
     <div class="logo">📍 RolêFortaleza</div>
@@ -59,18 +67,50 @@ Data criação: _2026-06-18_ <br>
     <a href="#" class="nav-cadastro">Cadastro</a>
   </div>
 </nav>
-Estilo: styles.css:43-97 (.navbar, .logo, .nav-links, .nav-actions) + styles.css:127-141 (botões Login/Cadastro)🌅 HERO (banner do topo com imagem)Imagem de fundo: index.html:52 aponta para assets/fundo-fortaleza.jpg. Nas outras páginas, assets/praia_sobre.png.Título e subtítulo: index.html:55-56:HTML<h1>Descubra os melhores rolês de <span class="accent">Fortaleza</span></h1>
+
+
+Estilo: styles.css:43-97 (.navbar, .logo, .nav-links, .nav-actions) + styles.css:127-141 (botões Login/Cadastro)
+🌅 HERO (banner do topo com imagem)
+Imagem de fundo: index.html:52 aponta para assets/fundo-fortaleza.jpg. Nas outras páginas, assets/praia_sobre.png.
+Título e subtítulo: index.html:55-56:
+<h1>Descubra os melhores rolês de <span class="accent">Fortaleza</span></h1>
 <p>Bares, barracas de praia, pubs, shows de comédia...</p>
-Estilo: styles.css:146-193 (.hero, .hero-bg, .hero-overlay, .hero-content).accent (em styles.css:185-187): É o que pinta "Fortaleza" de amarelo..hero-overlay (em styles.css:163-167): É o degradê escuro sobre a imagem.🔍 BARRA DE BUSCAHTML: index.html:57-59HTML<div class="search">
+
+
+Estilo: styles.css:146-193 (.hero, .hero-bg, .hero-overlay, .hero-content)
+.accent (em styles.css:185-187) é o que pinta "Fortaleza" de amarelo.
+.hero-overlay (em styles.css:163-167) é o degradê escuro sobre a imagem.
+🔍 BARRA DE BUSCA
+HTML: index.html:57-59
+<div class="search">
   <input id="search" type="text" placeholder="Qual é a vibe de hoje?" />
 </div>
-Estilo: styles.css:195-220 (forma redonda, sombra, tamanho)Lógica: script.js:403-406 — toda vez que você digita, ela filtra os cards pelo nome/descrição/bairro:JavaScriptsearchEl.addEventListener("input", (e) => {
+
+
+Estilo: styles.css:195-220 (forma redonda, sombra, tamanho)
+Lógica: script.js:403-406 — toda vez que você digita, ela filtra os cards pelo nome/descrição/bairro:
+searchEl.addEventListener("input", (e) => {
   searchQuery = e.target.value;
   renderGrid();
 });
-🏷️ FILTROS DE CATEGORIA (Todos, Bares, Pubs, etc.)HTML: index.html:64 — só uma <div id="filters"> vazia. O JS preenche.Lista de categorias: script.js:24-32JavaScriptconst categories = ["Todos","Bares","Pubs","Barracas","Comédia","Romântico","Econômico"];
-Emojis das categorias: script.js:33-41JavaScriptconst categoryEmojis = { Todos: "🔥", Bares: "🍸", ... };
-Quem desenha os botões: Função renderFilters() em script.js:329-346Estilo: styles.css:230-273 — botões redondos. O laranja do botão ativo vem de .filter-btn.active (styles.css:264-269).Para adicionar/remover categoria: Edite o array em script.js:24 e o objeto em script.js:33.🃏 CARDS DOS LOCAIS (o miolo do site)Os dados dos locais ficam em script.js:43-319 no array venues. Cada local é um objeto:JavaScript{
+
+
+🏷️ FILTROS DE CATEGORIA (Todos, Bares, Pubs, etc.)
+HTML: index.html:64 — só uma <div id="filters"> vazia. O JS preenche dinamicamente.
+Lista de categorias: script.js:24-32
+const categories = ["Todos","Bares","Pubs","Barracas","Comédia","Romântico","Econômico"];
+
+
+Emojis das categorias: script.js:33-41
+const categoryEmojis = { Todos: "🔥", Bares: "🍸", ... };
+
+
+Quem desenha os botões: função renderFilters() em script.js:329-346
+Estilo: styles.css:230-273 — botões redondos. O laranja do botão ativo vem de .filter-btn.active (styles.css:264-269).
+Para adicionar/remover categoria: edite o array em script.js:24 e o objeto em script.js:33.
+🃏 CARDS DOS LOCAIS (o miolo do site)
+Os dados dos locais ficam em script.js:43-319 no array venues. Cada local é um objeto estruturado:
+{
   id: 14,
   name: "Bar da Gelada",
   category: "Bares",
@@ -81,18 +121,53 @@ Quem desenha os botões: Função renderFilters() em script.js:329-346Estilo: st
   image: "assets/bdg.png",
   hours: "17h - 02h",
 }
-Quem desenha os cards na tela: Função renderGrid() em script.js:358-401. Ela:Filtra os venues pela categoria ativaFiltra pela buscaGera o HTML de cada cardEstilo: styles.css:275-414.grid — define que vira 1, 2 ou 3 colunas conforme o tamanho da tela (styles.css:283-293).card — fundo branco, sombra, animação ao passar o mouse (styles.css:296-311).badge — pílula azul com a categoria (canto superior esquerdo, styles.css:330-340).rating — nota com estrela (canto superior direito, styles.css:342-355).card-price — os "R$" amarelos (styles.css:378-382)Para adicionar um novo rolê: Copie um objeto de venues em script.js, mude os dados, garanta um id único.📄 PÁGINA "SOBRE" (sobre.html)Hero da página — sobre.html:34-45 (mesma estrutura do home, com imagem diferente)Bloco "Nossa proposta" — sobre.html:49-64:HTML<section class="about-section">
+
+
+Quem desenha os cards na tela: função renderGrid() em script.js:358-401. Ela se encarrega de:
+Filtrar os venues pela categoria ativa
+Filtrar pela busca textual
+Gerar o HTML dinâmico de cada card
+Estilo: styles.css:275-414
+.grid — define que vira 1, 2 ou 3 colunas conforme o tamanho da tela (styles.css:283-293)
+.card — fundo branco, sombra, animação ao passar o mouse (styles.css:296-311)
+.badge — pílula azul com a categoria (canto superior esquerdo, styles.css:330-340)
+.rating — nota com estrela (canto superior direito, styles.css:342-355)
+.card-price — os "R$" amarelos (styles.css:378-382)
+Para adicionar um novo rolê: copie um objeto de venues em script.js, modifique os dados e garanta um id único.
+📄 PÁGINA "SOBRE" (sobre.html)
+Hero da página — sobre.html:34-45 (mesma estrutura do home, com imagem diferente)
+Bloco "Nossa proposta" — sobre.html:49-64:
+<section class="about-section">
   <span class="section-label">Nossa proposta</span>
   <h2>Encontre o rolê ideal com mais facilidade</h2>
   ...
 </section>
-Os 3 cards (Pubs e bares / Barracas / Eventos) — sobre.html:66-84. Cada um tem ícone (emoji), título e descrição.Bloco azul final "Pronto para escolher..." — sobre.html:86-90, com o botão "Ver rolês" que volta pra home.Estilo da página inteira: styles.css:445-621.about-section — caixa branca com sombra.about-cards — grid dos 3 cards.about-cta — caixa azul final✉️ PÁGINA "CONTATO" (contato.html)Igual a sobre.html, mas com formulário:Os 3 cards — contato.html:61-79 (Sugestões / Correções / Parcerias)Formulário — contato.html:85-100:HTML<form id="contactForm" action="mailto" method="POST">
+
+
+Os 3 cards (Pubs e bares / Barracas / Eventos) — sobre.html:66-84. Cada um tem ícone (emoji), título e descrição.
+Bloco azul final "Pronto para escolher..." — sobre.html:86-90, com o botão "Ver rolês" que volta para a home.
+Estilo da página inteira: styles.css:445-621
+.about-section — caixa branca com sombra
+.about-cards — grid dos 3 cards
+.about-cta — caixa azul final
+✉️ PÁGINA "CONTATO" (contato.html)
+Igual a sobre.html, mas com a implementação de um formulário interativo:
+Os 3 cards — contato.html:61-79 (Sugestões / Correções / Parcerias)
+Formulário — contato.html:85-100:
+<form id="contactForm" action="mailto" method="POST">
   <input id="name" name="name" required>
   <input id="email" name="email" required>
   <textarea id="message" required></textarea>
   <button type="submit">Enviar</button>
 </form>
-Lógica de envio (mensagem de sucesso) — script.js:1-22: Intercepta o submit, mostra a mensagem verde, limpa os campos, esconde a mensagem após 5 segundos.Estilo do formulário: styles.css:660-681 (.input, .botao-form, form)Estilo da mensagem de sucesso: styles.css:99-125 (.success-message + animação slideDown)🎨 PALETA DE CORES (centralizada)styles.css:1-16 define as cores em variáveis CSS. Para mudar o tema inteiro do site, basta alterar aqui:CSS:root {
+
+
+Lógica de envio (mensagem de sucesso) — script.js:1-22: Intercepta o submit, mostra a mensagem verde, limpa os campos e esconde a mensagem automaticamente após 5 segundos.
+Estilo do formulário: styles.css:660-681 (.input, .botao-form, form)
+Estilo da mensagem de sucesso: styles.css:99-125 (.success-message + animação slideDown)
+🎨 PALETA DE CORES (centralizada)
+styles.css:1-16 define as cores em variáveis CSS globais. Para mudar o tema visual do site inteiro de forma instantânea, basta alterar aqui:
+:root {
   --primary: #ff6b33;     /* laranja dos botões/destaques */
   --secondary: #00468a;   /* azul dos badges/seção CTA */
   --accent: #f7b91a;      /* amarelo do "Fortaleza", R$, estrela */
@@ -100,4 +175,35 @@ Lógica de envio (mensagem de sucesso) — script.js:1-22: Intercepta o submit, 
   --card: #ffffff;        /* fundo dos cards */
   --foreground: #1a1a1a;  /* cor do texto */
 }
-📱 RESPONSIVIDADEO site se ajusta a celular/tablet/desktop via media queries:Tamanho de telaO que mudaCódigo de referênciaMobile (<640px)Grid de cards vira 1 coluna—Tablet (640-1023px)Grid vira 2 colunasstyles.css:283-287Desktop (≥1024px)Grid vira 3 colunasstyles.css:289-293Mobile (<720px)Navbar muda layout, Login/Cadastro somemstyles.css:623-651Tablet+ (≥768px)Cards da Sobre/Contato viram 3 colunasstyles.css:617-621🎬 ANIMAÇÕESFade-up dos cards ao carregar — styles.css:409-414 (@keyframes fadeUp) aplicado em .card (linha 305). O delay escalonado vem de script.js:380 (animation-delay:${i * 50}ms).Hover dos cards — styles.css:308-311 (sobe 6px e ganha sombra) + styles.css:326-328 (imagem dá um zoom de 10%).Mensagem de sucesso do form — styles.css:116-125 (@keyframes slideDown).🧠 RESUMO PARA APRESENTAR💡 Se for explicar em 1 minuto:"O site tem 3 páginas HTML que compartilham o mesmo styles.css e o mesmo script.js. A página inicial é dinâmica: o script.js guarda uma lista de 23 locais e usa duas funções — renderFilters() para gerar os botões de categoria e renderGrid() para gerar os cards. Os filtros e a busca chamam renderGrid() novamente, que filtra a lista e regenera só os cards visíveis. As páginas Sobre e Contato são estáticas, e o formulário de contato usa um JavaScript pequeno que mostra uma mensagem de sucesso ao enviar. Todo o visual vem de variáveis CSS — basta mudar --primary para trocar a cor de destaque do site inteiro."Quer que eu monte slides com isso, ou prefere imprimir esse mapa pra usar durante a apresentação?
+
+
+📱 RESPONSIVIDADE
+O site se ajusta dinamicamente a celular, tablet e desktop via media queries:
+Tamanho de tela
+O que muda
+Referência no CSS
+ 
+Mobile (<640px)
+Grid de cards vira 1 coluna
+—
+Tablet (640-1023px)
+Grid vira 2 colunas
+styles.css:283-287
+Desktop (≥1024px)
+Grid vira 3 colunas
+styles.css:289-293
+Mobile (<720px)
+Navbar muda layout, Login/Cadastro somem
+styles.css:623-651
+Tablet+ (≥768px)
+Cards da Sobre/Contato viram 3 colunas
+styles.css:617-621
+
+
+🎬 ANIMAÇÕES
+Fade-up dos cards ao carregar — styles.css:409-414 (@keyframes fadeUp) aplicado em .card (linha 305). O delay escalonado para efeito cascata vem de script.js:380 (animation-delay:${i * 50}ms).
+Hover dos cards — styles.css:308-311 (sobe 6px e ganha sombra mais suave) + styles.css:326-328 (imagem interna ganha um sutil zoom de 10%).
+Mensagem de sucesso do form — styles.css:116-125 (@keyframes slideDown).
+🧠 RESUMO PARA APRESENTAR
+Dica para explicação rápida (Pitch de 1 minuto):
+"O site tem 3 páginas HTML que compartilham o mesmo styles.css e o mesmo script.js. A página inicial é dinâmica: o script.js guarda uma lista de 23 locais e usa duas funções — renderFilters() para gerar os botões de categoria e renderGrid() para gerar os cards. Os filtros e a busca chamam renderGrid() novamente, que filtra a lista e regenera só os cards visíveis. As páginas Sobre e Contato são estáticas, e o formulário de contato usa um JavaScript pequeno que mostra uma mensagem de sucesso ao enviar. Todo o visual vem de variáveis CSS — basta mudar --primary para trocar a cor de destaque do site inteiro."
