@@ -18,4 +18,4 @@ O site foi criado para praticar a estruturação de páginas com HTML e a estili
 
 --
 
-Documentação codigo - https://docs.google.com/document/d/1E4BkGavunIjHsUMSBdaHmJ-vbFA6u6aZHKVHyS5XjCI/edit?tab=t.0
+Documentação codigo - https://docs.google.com/document/d/19ejVMpgL95pubEzpt-60iuKsTCZeN3QzDaI3L1bZPx0/edit?usp=sharing
